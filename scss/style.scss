@@ -1,0 +1,11 @@
+//ШРИФТЫ
+@import url("http://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap");
+@import "fonts";
+@import "icons";
+
+//ШРИФТЫ ПО УМОЛЧАНИЮ
+$fontFamily: "Heebo";
+
+body {
+   background-color: red;
+}
