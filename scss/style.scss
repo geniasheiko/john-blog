@@ -345,7 +345,7 @@ h6 {
 
    @media (max-width: $md2 + px) {
       max-width: none;
-      padding: 0 10px;
+      padding: 20px 10px;
    }
 }
 
@@ -353,8 +353,28 @@ h6 {
 
 // <HEADER> //
 .header {
+
    position: relative;
    z-index: 100;
+
+   .logo {
+      font-size: 26px;
+      font-weight: 700;
+      font-style: italic;
+      color: #000;
+      margin-left: 10px;
+      align-self: center;
+      border: 1px solid #ff6464;
+      padding: 0px 5px;
+      border-radius: 50%;
+      transition: all 0.8s ease 0s;
+
+      &:hover {
+         background-color: #ff7c7c;
+         border-color: #ff7c7c;
+
+      }
+   }
 
    &__content {
       max-width: 1052px;
@@ -367,10 +387,15 @@ h6 {
       height: 82px;
       align-items: center;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
 
       @media (max-width: $md3+px) {
          height: 50px;
+         position: fixed;
+         right: 0;
+         left: 0;
+         padding-right: 10px;
+         background: #fff;
       }
    }
 }
